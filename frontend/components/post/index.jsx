@@ -1,10 +1,11 @@
 import React from 'react';
-import {PostCard, Avatar, Job, Company} from index.styled;
+import {PostCard, Avatar, Job, Company, Months, Rating} from "./index.styled";
 
-const PostActivityCard = () => {
+const PostActivityCard = ({data}) => {
+
   return (
     <PostCard>
-      <Avatar>Avatar</Avatar>
+      <Avatar>{data.icon}</Avatar>
       <Job>Job</Job>
       <Company>Company</Company>
       <Months>Months</Months>
